@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-02-04T20:17:48.685723" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/sunnybharne/code/Robot-Framework/tests">
+<suite id="s1-s1" name="Bdd Test" source="/Users/sunnybharne/code/Robot-Framework/tests/bdd_test.robot">
+<test id="s1-s1-t1" name="Valid Login" line="13">
+<kw name="Given a web browser is at the SauceDemo login page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:48.769845" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.769685" elapsed="2.859721"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.769249" elapsed="2.860423"/>
+</kw>
+<kw name="When a user attempts to login with valid credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:51.630592" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${VALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.630245" elapsed="0.197333"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:51.828922" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.828360" elapsed="0.044585"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:51.873381" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.873122" elapsed="0.058199"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:51.629916" elapsed="0.301513"/>
+</kw>
+<kw name="Then the user should be able to login successfully">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Products</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.931776" elapsed="0.008687"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.940589" elapsed="0.091241"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:51.931575" elapsed="0.100360"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.768976" elapsed="3.263063"/>
+</test>
+<test id="s1-s1-t2" name="Invalid Login" line="18">
+<kw name="Given a web browser is at the SauceDemo login page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:52.032954" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T20:17:52.032750" elapsed="1.585708"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:52.032504" elapsed="1.586168"/>
+</kw>
+<kw name="When a user attempts to login with invalid credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:53.619384" level="INFO">Typing text 'invalid_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${INVALID_USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:53.619151" elapsed="0.116794"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:53.736353" level="INFO">Typing text 'wrong_password' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:53.736100" elapsed="0.065279"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:53.802267" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:53.801800" elapsed="0.070408"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:53.618888" elapsed="0.253404"/>
+</kw>
+<kw name="Then the user should not be able to login">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Epic sadface</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T20:17:53.872830" elapsed="0.006494"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T20:17:53.879432" elapsed="0.171533"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:53.872396" elapsed="0.178679"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:52.032251" elapsed="2.018925"/>
+</test>
+<status status="PASS" start="2024-02-04T20:17:48.701499" elapsed="5.351343"/>
+</suite>
+<status status="PASS" start="2024-02-04T20:17:48.688782" elapsed="5.364394"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Bdd Test">Tests.Bdd Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

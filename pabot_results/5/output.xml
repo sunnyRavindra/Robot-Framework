@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-02-04T20:17:48.690917" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/sunnybharne/code/Robot-Framework/tests">
+<suite id="s1-s1" name="Variables Test" source="/Users/sunnybharne/code/Robot-Framework/tests/variables_test.robot">
+<test id="s1-s1-t1" name="Integer" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.707980" level="INFO">${var1} = 10</msg>
+<var>${var1}</var>
+<arg>10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.707845" elapsed="0.000154"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.708155" level="INFO">${var2} = 20</msg>
+<var>${var2}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.708079" elapsed="0.000088"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.708366" level="INFO">${AddedValue} = 30</msg>
+<var>${AddedValue}</var>
+<arg>${var1} + ${var2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.708227" elapsed="0.000152"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.708513" level="INFO">This is addition of variables 30</msg>
+<arg>This is addition of variables ${AddedValue}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.708436" elapsed="0.000100"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.707497" elapsed="0.001096"/>
+</test>
+<test id="s1-s1-t2" name="Decimal" line="11">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.708924" level="INFO">${Decimal} = 10.5</msg>
+<var>${Decimal}</var>
+<arg>10.5</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.708839" elapsed="0.000096"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.709046" level="INFO">${Decimal1} = 10.5</msg>
+<var>${Decimal1}</var>
+<arg>10.5</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.708984" elapsed="0.000072"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.709208" level="INFO">${resultdecimal} = 21.0</msg>
+<var>${resultdecimal}</var>
+<arg>${Decimal} + ${Decimal1}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.709104" elapsed="0.000116"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.709353" level="INFO">This is addition of variables 21.0</msg>
+<arg>This is addition of variables ${resultdecimal}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.709278" elapsed="0.000097"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.708708" elapsed="0.000717"/>
+</test>
+<test id="s1-s1-t3" name="List" line="17">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.709709" level="INFO">@{List} = [ 1 | 2 | 3 | 4 | Five ]</msg>
+<var>@{List}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>Five</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.709630" elapsed="0.000091"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.709832" level="INFO">This is list printed as is ['1', '2', '3', '4', 'Five']</msg>
+<arg>This is list printed as is ${List}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.709768" elapsed="0.000083"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.710102" level="INFO">Logging this from for loop 1</msg>
+<arg>Logging this from for loop ${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.710038" elapsed="0.000081"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-02-04T20:17:48.709992" elapsed="0.000145"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.710272" level="INFO">Logging this from for loop 2</msg>
+<arg>Logging this from for loop ${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.710221" elapsed="0.000067"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-02-04T20:17:48.710180" elapsed="0.000125"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.710446" level="INFO">Logging this from for loop 3</msg>
+<arg>Logging this from for loop ${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.710381" elapsed="0.000081"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-02-04T20:17:48.710343" elapsed="0.000135"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.710613" level="INFO">Logging this from for loop 4</msg>
+<arg>Logging this from for loop ${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.710555" elapsed="0.000075"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-02-04T20:17:48.710514" elapsed="0.000172"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.711136" level="INFO">Logging this from for loop Five</msg>
+<arg>Logging this from for loop ${i}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.711034" elapsed="0.000126"/>
+</kw>
+<var name="${i}">Five</var>
+<status status="PASS" start="2024-02-04T20:17:48.710897" elapsed="0.000288"/>
+</iter>
+<var>${i}</var>
+<value>@{List}</value>
+<status status="PASS" start="2024-02-04T20:17:48.709891" elapsed="0.001318"/>
+</for>
+<status status="PASS" start="2024-02-04T20:17:48.709520" elapsed="0.001752"/>
+</test>
+<test id="s1-s1-t4" name="Dictionary" line="25">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.711692" level="INFO">&amp;{hashmap} = { key1=value1 | key2=value2 | key3=value3 }</msg>
+<var>&amp;{hashmap}</var>
+<arg>key1=value1</arg>
+<arg>key2=value2</arg>
+<arg>key3=value3</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.711528" elapsed="0.000178"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.711831" level="INFO">This is dictionary printed as is {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}</msg>
+<arg>This is dictionary printed as is ${hashmap}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.711759" elapsed="0.000093"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.711957" level="INFO">This is one element from dict value1</msg>
+<arg>This is one element from dict ${hashmap}[key1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.711895" elapsed="0.000079"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.711381" elapsed="0.000655"/>
+</test>
+<doc>This is variable file for the test suite</doc>
+<status status="PASS" start="2024-02-04T20:17:48.706925" elapsed="0.005306"/>
+</suite>
+<status status="PASS" start="2024-02-04T20:17:48.695168" elapsed="0.018034"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Variables Test">Tests.Variables Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

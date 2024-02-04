@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-02-04T20:17:48.700406" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/sunnybharne/code/Robot-Framework/tests">
+<suite id="s1-s1" name="Template Test" source="/Users/sunnybharne/code/Robot-Framework/tests/template_test.robot">
+<test id="s1-s1-t1" name="Valid Login" line="6">
+<kw name="Login to the application soucedemo">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:48.775889" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.775737" elapsed="3.188011"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:51.966223" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:51.964380" elapsed="0.150422"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:52.115170" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:52.114947" elapsed="0.048680"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:52.163929" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:52.163757" elapsed="0.040014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T20:17:57.205877" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T20:17:52.204000" elapsed="5.001957"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T20:17:57.206138" elapsed="0.092044"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2024-02-04T20:17:48.775247" elapsed="8.523063"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:48.774935" elapsed="8.523543"/>
+</test>
+<test id="s1-s1-t2" name="Invalid Login" line="9">
+<kw name="Login to the application soucedemo">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:57.300425" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T20:17:57.299999" elapsed="1.505066"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:58.806100" level="INFO">Typing text 'invalid_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:58.805552" elapsed="0.139729"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:58.945627" level="INFO">Typing text 'wrong_password' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:58.945434" elapsed="0.048747"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T20:17:58.994470" level="INFO">Clicking button 'css=.btn_action'.</msg>
+<arg>css=.btn_action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T20:17:58.994306" elapsed="0.033610"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T20:18:04.032698" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T20:17:59.028050" elapsed="5.004858"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T20:18:04.033251" elapsed="0.095733"/>
+</kw>
+<arg>invalid_user</arg>
+<arg>wrong_password</arg>
+<status status="PASS" start="2024-02-04T20:17:57.299486" elapsed="6.829629"/>
+</kw>
+<status status="PASS" start="2024-02-04T20:17:57.298780" elapsed="6.830463"/>
+</test>
+<status status="PASS" start="2024-02-04T20:17:48.715731" elapsed="15.413889"/>
+</suite>
+<status status="PASS" start="2024-02-04T20:17:48.704343" elapsed="15.425622"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Template Test">Tests.Template Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

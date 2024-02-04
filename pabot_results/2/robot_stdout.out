@@ -1,0 +1,36 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Failed Test :: This is a test suite for the SauceDemo application       
+==============================================================================
+Failed Test Case :: This test case is expected to fail                  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/sunnybharne/code/Robot-Framework/tests/failed_test.robot:10
+    T:  Failed Test Case    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/sunnybharne/code/Robot-Framework/tests/failed_test.robot:13
+      Fail    This test case is expected to fail
+______________________________________________________________________________
+| FAIL |
+This test case is expected to fail
+------------------------------------------------------------------------------
+HTML Error :: This test case is expected to fail                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/sunnybharne/code/Robot-Framework/tests/failed_test.robot:15
+    T:  HTML Error    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/sunnybharne/code/Robot-Framework/tests/failed_test.robot:18
+      Should Be Equal As Numbers    {ValidNumber}    100    *HTML* Number is not my <b>MAGIC</b> number.
+______________________________________________________________________________
+| FAIL |
+'{ValidNumber}' cannot be converted to a floating point number: ValueError: could not convert string to float: '{ValidNumber}'
+------------------------------------------------------------------------------
+Tests.Failed Test :: This is a test suite for the SauceDemo applic... | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Tests                                                                 | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  /Users/sunnybharne/code/Robot-Framework/pabot_results/2/output.xml

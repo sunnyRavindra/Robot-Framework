@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "robot-framework"
+version = "0.1.0"
+description = ""
+authors = ["Sunny Ravindra <sunny.bharne.devops@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+robotframework = "^7.0"
+robotframework-browser = "^18.0.0"
+robotframework-seleniumlibrary = "^6.2.0"
+robotframework-pabot = "^2.18.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

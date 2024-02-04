@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-02-04T20:17:48.684540" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/Users/sunnybharne/code/Robot-Framework/tests">
+<suite id="s1-s1" name="Tag Test" source="/Users/sunnybharne/code/Robot-Framework/tests/tag_test.robot">
+<test id="s1-s1-t1" name="Test Case 1" line="2">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.697240" level="INFO">This test case will continue on failure</msg>
+<arg>This test case will continue on failure</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.696805" elapsed="0.000533"/>
+</kw>
+<tag>robot:continue-on-failure</tag>
+<status status="PASS" start="2024-02-04T20:17:48.696510" elapsed="0.001129"/>
+</test>
+<test id="s1-s1-t2" name="Test Case 2" line="6">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.698625" level="INFO">This test case will recursively continue on failure</msg>
+<arg>This test case will recursively continue on failure</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.698412" elapsed="0.000281"/>
+</kw>
+<tag>robot:recursive-continue-on-failure</tag>
+<status status="PASS" start="2024-02-04T20:17:48.697971" elapsed="0.000864"/>
+</test>
+<test id="s1-s1-t3" name="Test Case 3" line="10">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.699627" level="INFO">This test case will stop on failure</msg>
+<arg>This test case will stop on failure</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.699526" elapsed="0.000130"/>
+</kw>
+<tag>robot:stop-on-failure</tag>
+<status status="PASS" start="2024-02-04T20:17:48.699179" elapsed="0.000544"/>
+</test>
+<test id="s1-s1-t4" name="Test Case 4" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.700243" level="INFO">This test case will recursively stop on failure</msg>
+<arg>This test case will recursively stop on failure</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.700104" elapsed="0.000308"/>
+</kw>
+<tag>robot:recursive-stop-on-failure</tag>
+<status status="PASS" start="2024-02-04T20:17:48.699828" elapsed="0.000869"/>
+</test>
+<test id="s1-s1-t5" name="Test Case 5" line="18">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.701047" level="INFO">This test case will be skipped if it fails</msg>
+<arg>This test case will be skipped if it fails</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.700957" elapsed="0.000117"/>
+</kw>
+<tag>robot:skip-on-failure</tag>
+<status status="PASS" start="2024-02-04T20:17:48.700804" elapsed="0.000329"/>
+</test>
+<test id="s1-s1-t6" name="Test Case 6" line="22">
+<tag>robot:skip</tag>
+<status status="SKIP" start="2024-02-04T20:17:48.701426" elapsed="0.000518">Test skipped using 'robot:skip' tag.</status>
+</test>
+<test id="s1-s1-t7" name="Test Case 8" line="40">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.702314" level="INFO">This test case will stop execution gracefully</msg>
+<arg>This test case will stop execution gracefully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.702241" elapsed="0.000096"/>
+</kw>
+<tag>robot:exit</tag>
+<status status="PASS" start="2024-02-04T20:17:48.702072" elapsed="0.000316"/>
+</test>
+<test id="s1-s1-t8" name="Test Case 9" line="44">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T20:17:48.702641" level="INFO">This test case will flatten the output</msg>
+<arg>This test case will flatten the output</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T20:17:48.702584" elapsed="0.000078"/>
+</kw>
+<tag>robot:flatten</tag>
+<status status="PASS" start="2024-02-04T20:17:48.702464" elapsed="0.000242"/>
+</test>
+<status status="PASS" start="2024-02-04T20:17:48.695894" elapsed="0.006938"/>
+</suite>
+<status status="PASS" start="2024-02-04T20:17:48.687774" elapsed="0.015296"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="1" id="s1" name="Tests">Tests</stat>
+<stat pass="7" fail="0" skip="1" id="s1-s1" name="Tag Test">Tests.Tag Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

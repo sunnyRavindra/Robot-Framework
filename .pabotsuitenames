@@ -1,0 +1,10 @@
+datasources:e1a97bb86b737415cda26a7d0614e375af59373f
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:0790ee0beb7d1889e5b85f6707633195a9c1e93e
+--suite Tests.Bdd Test
+--suite Tests.Datadriven Test
+--suite Tests.Failed Test
+--suite Tests.Tag Test
+--suite Tests.Template Test
+--suite Tests.Variables Test
